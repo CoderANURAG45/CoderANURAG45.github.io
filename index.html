@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Anurag Sahu | Machine Learning Engineer</title>
     <link rel="stylesheet" href="style.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600&family=Syne:wght@700;800&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -14,16 +14,19 @@
 
         <!-- HERO SECTION -->
         <header class="hero">
+            <p class="hero-tag">Available for new opportunities</p>
             <h1>Anurag Sahu</h1>
             <p class="role">Machine Learning Engineer</p>
             <p class="summary">
-                I design and deploy end-to-end machine learning systems with a focus on 
-                fraud detection, NLP, and intelligent document processing. 
-                Experienced in building production-ready APIs and scalable ML pipelines.
+                I build production-grade ML systems that solve real document intelligence problems —
+                from entity extraction and fraud detection to OCR pipelines and transformer-based NLP.
+                1+ year of hands-on experience shipping models that process thousands of real-world documents
+                at a Lucknow-based AI product company.
             </p>
             <div class="hero-links">
                 <a href="https://github.com/CoderANURAG45" target="_blank" class="btn">GitHub</a>
-                <a href="#" target="_blank" class="btn-outline">LinkedIn</a>
+                <a href="#linkedin" target="_blank" class="btn-outline">LinkedIn</a>
+                <a href="mailto:your@email.com" class="btn-outline">Email Me</a>
             </div>
         </header>
 
@@ -33,27 +36,27 @@
             <div class="skills-grid">
                 <div>
                     <h4>Languages</h4>
-                    <p>Python</p>
+                    <p>Python (Primary), C++, SQL (Basic)</p>
                 </div>
                 <div>
                     <h4>ML / DL</h4>
-                    <p>PyTorch, Transformers, Hugging Face</p>
+                    <p>PyTorch, Scikit-learn, Transformers, Hugging Face LLMs, LayoutLM / LayoutLMv3</p>
                 </div>
                 <div>
-                    <h4>NLP / OCR</h4>
-                    <p>Text Classification, OCR Pipelines</p>
+                    <h4>NLP / OCR / CV</h4>
+                    <p>NER, Text Classification, OCR Pipelines, Document Layout Analysis, Image Forensics</p>
                 </div>
                 <div>
-                    <h4>Backend</h4>
-                    <p>FastAPI, REST APIs</p>
+                    <h4>Backend & APIs</h4>
+                    <p>FastAPI, REST APIs, Model Serving</p>
                 </div>
                 <div>
-                    <h4>MLOps</h4>
-                    <p>Docker, Git, Git LFS</p>
+                    <h4>MLOps & Tools</h4>
+                    <p>Docker, Git, Git LFS, Label Studio, GitHub Actions</p>
                 </div>
                 <div>
                     <h4>Cloud</h4>
-                    <p>Azure VM (Basic), Deployment Workflows</p>
+                    <p>Azure VM, Deployment Workflows</p>
                 </div>
             </div>
         </section>
@@ -63,54 +66,165 @@
             <h2>Featured Projects</h2>
 
             <div class="project-card">
-                <h3>Smart Email Fraud Detection System</h3>
+                <div class="project-header">
+                    <h3>Document Entity Extraction System</h3>
+                    <span class="project-badge">Production · Bytexus</span>
+                </div>
                 <p>
-                    End-to-end NLP-based fraud detection pipeline built using 
-                    transformer models. Includes preprocessing, training, evaluation, 
-                    and production deployment through a FastAPI service.
+                    Designed and deployed an end-to-end intelligent document understanding pipeline
+                    capable of extracting structured entities — including names, dates, account numbers,
+                    invoice IDs, and custom fields — from complex real-world documents such as invoices,
+                    ratesheets, and customs forms. Built using LayoutLMv3 for layout-aware document
+                    understanding, combined with NER models fine-tuned on annotated datasets prepared
+                    in Label Studio. Integrated OCR and Hugging Face LLMs for post-processing and validation.
+                    Sole developer across the full pipeline from data annotation to model deployment.
+                </p>
+                <div class="metrics-row">
+                    <span class="metric">F1 Score: 90%+</span>
+                    <span class="metric">Recall: 90%+</span>
+                    <span class="metric">Doc Types: Invoices, Ratesheets, Customs</span>
+                </div>
+                <p class="tech">
+                    <strong>Stack:</strong> PyTorch · LayoutLMv3 · Hugging Face Transformers · NER · OCR · Label Studio · FastAPI
+                </p>
+            </div>
+
+            <div class="project-card">
+                <div class="project-header">
+                    <h3>Document Classification System</h3>
+                    <span class="project-badge">Production · Bytexus</span>
+                </div>
+                <p>
+                    Built a high-accuracy document classification system that automatically categorizes
+                    thousands of business documents into structured types. Evaluated and compared multiple
+                    classical ML algorithms — including Logistic Regression and Linear SVC — selecting the
+                    optimal model based on production performance characteristics. Served the final model
+                    through a FastAPI microservice for real-time inference. Designed, developed, and deployed
+                    entirely independently.
+                </p>
+                <div class="metrics-row">
+                    <span class="metric">Accuracy: 95–97%</span>
+                    <span class="metric">Scale: Thousands of documents</span>
+                    <span class="metric">Deployment: FastAPI</span>
+                </div>
+                <p class="tech">
+                    <strong>Stack:</strong> Python · Scikit-learn · Linear SVC · Logistic Regression · FastAPI · Docker
+                </p>
+            </div>
+
+            <div class="project-card">
+                <div class="project-header">
+                    <h3>PDF & Image Fraud Detection Pipeline</h3>
+                    <span class="project-badge">Production · Bytexus</span>
+                </div>
+                <p>
+                    Developed multi-layered document tampering detection pipelines for both PDFs and
+                    images. Applied a combination of forensic analysis techniques to identify manipulation,
+                    alteration, and inconsistencies in documents such as ratesheets. Designed to flag
+                    suspicious documents for downstream fraud analysis workflows.
                 </p>
                 <p class="tech">
-                    <strong>Tech:</strong> PyTorch, Transformers, FastAPI, Docker
+                    <strong>Stack:</strong> Python · OpenCV · PDF Forensics · Image Processing Pipelines
                 </p>
-                <a href="https://github.com/CoderANURAG45/smart-fraud-detection" 
+            </div>
+
+            <div class="project-card">
+                <div class="project-header">
+                    <h3>Smart Email Fraud Detection System</h3>
+                    <span class="project-badge">Personal Project · In Progress</span>
+                </div>
+                <p>
+                    Building an end-to-end NLP-based fraud detection pipeline using transformer models.
+                    Covers the full ML lifecycle — preprocessing, training, evaluation, and deployment
+                    via a FastAPI service. Currently refining model performance and expanding the dataset.
+                </p>
+                <p class="tech">
+                    <strong>Stack:</strong> PyTorch · Transformers · FastAPI · Docker
+                </p>
+                <a href="https://github.com/CoderANURAG45/smart-fraud-detection"
                    target="_blank" class="project-link">
                    View on GitHub →
                 </a>
             </div>
-
-            <div class="project-card">
-                <h3>Intelligent Document Analyzer (In Development)</h3>
-                <p>
-                    Designing an end-to-end document understanding system capable of 
-                    classifying document types and extracting structured entities 
-                    (e.g., names, dates, account numbers, invoice IDs) using transformer-based 
-                    NER models. The system aims to validate extracted data and flag 
-                    inconsistencies for fraud detection and anomaly analysis.
-                </p>
-                <p class="tech">
-                    <strong>Planned Stack:</strong> Transformers, NER, OCR Pipelines, FastAPI
-                </p>
-            </div>
-
 
         </section>
 
         <!-- EXPERIENCE SECTION -->
         <section class="section">
             <h2>Professional Experience</h2>
+
             <div class="experience">
-                <h3>Machine Learning Engineer</h3>
+                <div class="exp-header">
+                    <div>
+                        <h3>Machine Learning Engineer</h3>
+                        <p class="company">Bytexus Software Solutions Pvt. Ltd. · Lucknow, India</p>
+                    </div>
+                    <span class="exp-date">Mar 2025 – Present</span>
+                </div>
                 <ul>
-                    <li>Designed document fraud detection and tampering analysis systems.</li>
-                    <li>Built NLP and OCR-based pipelines for real-world document processing.</li>
-                    <li>Developed ML systems considering production constraints and scalability.</li>
+                    <li>Sole developer of a LayoutLMv3-based entity extraction system achieving 90%+ F1 and recall across invoice, ratesheet, and customs documents — the company's most complex ML project to date.</li>
+                    <li>Built and deployed document fraud detection pipelines using multi-technique forensic analysis on PDFs and images, enabling automated tampering identification in business-critical workflows.</li>
+                    <li>Designed and shipped production ML systems end-to-end — from data annotation and model training to FastAPI deployment — with no team dependency.</li>
                 </ul>
+            </div>
+
+            <div class="experience">
+                <div class="exp-header">
+                    <div>
+                        <h3>Python Developer Intern</h3>
+                        <p class="company">Bytexus Software Solutions Pvt. Ltd. · Lucknow, India</p>
+                    </div>
+                    <span class="exp-date">Dec 2024 – Feb 2025</span>
+                </div>
+                <ul>
+                    <li>Developed a document classification system using Logistic Regression and Linear SVC achieving 95–97% accuracy across thousands of real-world documents.</li>
+                    <li>Served the trained model via a FastAPI microservice, gaining hands-on experience in end-to-end ML deployment workflows.</li>
+                    <li>Laid the foundation for the company's document intelligence stack, which was subsequently extended into more advanced NLP and OCR systems.</li>
+                </ul>
+            </div>
+
+        </section>
+
+        <!-- EDUCATION SECTION -->
+        <section class="section">
+            <h2>Education</h2>
+
+            <div class="education">
+                <div class="exp-header">
+                    <div>
+                        <h3>B.Tech, Computer Science & Engineering</h3>
+                        <p class="company">[Your College Name] · Lucknow, India</p>
+                    </div>
+                    <span class="exp-date">Graduated 2024</span>
+                </div>
+            </div>
+
+            <div class="education">
+                <div class="exp-header">
+                    <div>
+                        <h3>Diploma in Programming</h3>
+                        <p class="company">Indian Institute of Technology, Madras (IITM BS)</p>
+                    </div>
+                    <span class="exp-date">In Progress</span>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- CONTACT SECTION -->
+        <section class="section contact-section">
+            <h2>Let's Connect</h2>
+            <p>I'm open to ML engineering roles, freelance projects, and interesting problems in document AI, NLP, and fraud detection.</p>
+            <div class="hero-links">
+                <a href="mailto:your@email.com" class="btn">your@email.com</a>
+                <a href="https://github.com/CoderANURAG45" target="_blank" class="btn-outline">GitHub</a>
+                <a href="#linkedin" target="_blank" class="btn-outline">LinkedIn</a>
             </div>
         </section>
 
         <!-- FOOTER -->
         <footer>
-            <p>© 2026 Anurag Sahu</p>
+            <p>© 2026 Anurag Sahu · Machine Learning Engineer · Lucknow, India</p>
         </footer>
 
     </div>
